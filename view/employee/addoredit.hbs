@@ -1,0 +1,58 @@
+<h3>{{viewTitle}}</h3>
+
+<form action="/api/employee/create" method="POST" autocomplete="off">
+  <input type="hidden" name="_id" value="{{employee._id}}" />
+  <div class="form-group">
+    <label>Full name</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="full name"
+      name="fullname"
+      value="{{employee.fullname}}"
+    />
+    <div class="div text-danger">{{employee.fullnameError}}</div>
+  </div>
+  <div class="form-group">
+    <label>Email</label>
+    <input
+      type="text"
+      class="form-control"
+      placeholder="email"
+      name="email"
+      value="{{employee.email}}"
+    />
+    <div class="div text-danger">{{employee.emailError}}</div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label>Mobile</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="mobile"
+        name="mobile"
+        value="{{employee.mobile}}"
+      />
+    </div>
+    <div class="form-group col-md-6">
+      <label>City</label>
+      <input
+        type="text"
+        class="form-control"
+        placeholder="city"
+        name="city"
+        value="{{employee.city}}"
+      />
+    </div>
+  </div>
+  <div class="form-group">
+    <button class="btn btn-info" type="submit">
+      <i class="fa fa-database"> Submit </i>
+    </button>
+    <a class="btn btn-secondary" href="/api/employee/list">
+      <i class="fa fa-plus"></i> View All
+    </a>
+  </div>
+</form>
