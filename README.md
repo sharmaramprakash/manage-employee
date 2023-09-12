@@ -1,6 +1,6 @@
 # About this project
 1. Tech stack - Mongodb, handlebars, JavaScript, TypeScript, express, node
-2. Create, edit, view, delete an emloyee
+2. Create, edit, view, delete an employee
 3. Database is persisted in mongodb
 4. Find a few code snippet below about zen coding in editor
 
